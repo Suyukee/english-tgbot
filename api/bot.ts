@@ -9,4 +9,6 @@ if (!token) throw new Error('BOT_TOKEN не установлен');
 
 const bot = new Bot(token);
 
+bot.command('start', (ctx) => ctx.reply('Добро пожаловать. Запущен и работает!'));
+
 export default webhookCallback(bot, 'std/http');
