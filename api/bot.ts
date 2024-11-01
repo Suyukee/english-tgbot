@@ -11,4 +11,6 @@ const bot = new Bot(token);
 
 bot.command('start', (ctx) => ctx.reply('Добро пожаловать. Запущен и работает!'));
 
+bot.start();
+
 export default webhookCallback(bot, 'std/http');
